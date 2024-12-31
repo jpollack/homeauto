@@ -2,9 +2,9 @@
 
 set -e
 
-DEVICE="wlx9cefd5fca84f"
-WIFINAME="thisnetwork"
-WIFIPSK="isnogood"
+DEVICE=
+WIFINAME=
+WIFIPSK=
 
 if ! buildah images | grep -q python-kasa ; then 
     ctr=$(buildah from debian:12)
